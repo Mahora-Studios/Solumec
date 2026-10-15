@@ -318,6 +318,48 @@ function App() {
           </div>
         </section>
 
+        <section className="overflow-hidden bg-white py-24 lg:py-32">
+          <div className="mx-auto grid max-w-7xl items-center gap-12 px-5 lg:grid-cols-[0.72fr_1.28fr] lg:gap-16 lg:px-8">
+            <div>
+              <span className="section-label">Conoce Solumec</span>
+              <h2 className="section-title mt-5">La precisión también se ve</h2>
+              <p className="mt-6 text-lg leading-relaxed text-slate-600">
+                Descubre cómo trabajamos para mantener cada máquina en condiciones óptimas y ayudar a nuestros clientes a evitar paradas inesperadas.
+              </p>
+              <div className="mt-8 space-y-4">
+                {["Intervenciones planificadas", "Atención técnica especializada", "Soluciones adaptadas a cada instalación"].map((item) => (
+                  <div key={item} className="flex items-center gap-3 font-bold text-slate-700">
+                    <span className="grid size-8 place-items-center rounded-full bg-blue-50 text-blue-600">
+                      <Icon name="check" className="size-4" />
+                    </span>
+                    {item}
+                  </div>
+                ))}
+              </div>
+              <a href="#contacto" className="mt-10 inline-flex items-center gap-3 font-extrabold text-blue-600 transition hover:gap-5">
+                Cuéntanos qué necesita tu maquinaria <Icon name="arrow" />
+              </a>
+            </div>
+            <div className="relative">
+              <div className="absolute -inset-4 -z-10 rounded-2xl bg-blue-50" />
+              <div className="aspect-video overflow-hidden rounded-xl bg-slate-950 shadow-2xl shadow-slate-950/20">
+                <iframe
+                  className="size-full"
+                  src="https://www.youtube-nocookie.com/embed/7-B2J_t9j04?rel=0"
+                  title="Vídeo promocional de Solumec"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
+                  allowFullScreen
+                />
+              </div>
+              <div className="absolute -bottom-6 -right-4 hidden rounded-lg bg-blue-600 px-6 py-4 text-white shadow-xl sm:block">
+                <span className="text-xs font-bold uppercase tracking-[0.16em] text-blue-200">Soluciones reales</span>
+                <strong className="mt-1 block text-lg">Para la industria real</strong>
+              </div>
+            </div>
+          </div>
+        </section>
+
         <section id="ventajas" className="py-24 lg:py-32">
           <div className="mx-auto max-w-7xl px-5 lg:px-8">
             <div className="mx-auto max-w-3xl text-center">
